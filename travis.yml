@@ -1,10 +1,9 @@
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "Encrypted <access-key-id>=AKIAYQ6TFHRGB7ZVPX3V"
+  access_key_id:"AKIAYQ6TFHRGB7ZVPX3V"
   secret_access_key:
-    secure: "Encypted <secret-access-key>=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"
+    secure: "Im+GG7xLPufSPRv6UK9CV/FjLeKiVAKLUPzDIUjb"
   region: "us-east-2"
   app: "Assignment2_Group32"
   env: "Assignment2group32-env"
