@@ -1,7 +1,7 @@
 language: generic
 
 script:
-  - echo index.html
+  - cat AWS_EB/index.html
 
 deploy:
   provider: elasticbeanstalk
