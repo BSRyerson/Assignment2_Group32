@@ -1,7 +1,5 @@
 language: generic
 
-branches: main
-
 deploy:
   provider: elasticbeanstalk
   access_key_id: "AKIAYQ6TFHRGB7ZVPX3V"
@@ -13,3 +11,6 @@ deploy:
   #zip-file: "build/demo.jar"
   skip_cleanup: true
   only_create_app_version: false
+  on:
+    tags: true
+    all_branches: true
