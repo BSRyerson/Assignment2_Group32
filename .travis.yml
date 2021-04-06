@@ -8,8 +8,8 @@ deploy:
   access_key_id: "AKIAYQ6TFHRGB7ZVPX3V"
   secret_access_key: "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"
   region: "us-east-2"
-  app: "Assignment2_Part4"
-  env: "Assignment2part4-env"
+  app: "Testapp"
+  env: "Testapp-env"
   bucket_name: "elasticbeanstalk-us-east-2-586169007180"
   only_create_app_version: false
   on:
