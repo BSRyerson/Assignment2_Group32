@@ -1,5 +1,10 @@
 language: generic
 
+
+
+script:
+  - zip index.zip index.html
+
 deploy:
   provider: elasticbeanstalk
   access_key_id: "AKIAYQ6TFHRGB7ZVPX3V"
@@ -8,8 +13,8 @@ deploy:
   app: "Assignment2_Part4"
   env: "Assignment2part4-env"
   bucket_name: "elasticbeanstalk-us-east-2-586169007180"
-  #zip-file: "build/demo.jar"
-  skip_cleanup: true
+  zip-file: "index.zip"
+  cleanup: false
   only_create_app_version: false
   on:
     all_branches: true
