@@ -2,11 +2,12 @@ language: generic
 
 script:
   - cat index.html
+  - echo "With environment variables in Travis-CI"
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIAYQ6TFHRGB7ZVPX3V"
-  secret_access_key: "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"
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
   region: "us-east-2"
   app: "Testapp"
   env: "Testapp-env"
