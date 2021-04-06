@@ -8,4 +8,6 @@ deploy:
   app: "Assignment2_Part4"
   env: "Assignment2part4-env"
   bucket_name: "elasticbeanstalk-us-east-2-586169007180"
-  
+  #zip-file: "build/demo.jar"
+  skip_cleanup: true
+  only_create_app_version: false
