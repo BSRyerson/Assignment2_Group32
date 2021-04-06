@@ -13,4 +13,4 @@ deploy:
   only_create_app_version: false
   on:
     branches:
-      - main
+      - master
