@@ -1,6 +1,7 @@
 language: generic
 
-
+script:
+  - echo index.html
 
 deploy:
   provider: elasticbeanstalk
