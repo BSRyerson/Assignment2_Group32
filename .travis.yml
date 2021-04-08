@@ -15,7 +15,7 @@ script:
   - echo "With environment variables in Travis-CI"
 
 after_success:
-  - codecov --token=449f263b-7646-4f38-bb86-a79b7fee433c
+  - codecov --token=008be1f8-a35f-442c-8514-87f708b2068a
   
 deploy:
   provider: elasticbeanstalk
