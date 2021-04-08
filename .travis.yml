@@ -1,9 +1,22 @@
-language: generic
+#language: generic
+
+language: python
+
+python:
+  - 3.6
+install:
+  - pip install codecov
+  - pip install coverage
 
 script:
+  - python -m unittest discover -v ./ci_play/
+  - coverage run ./ci_play/test.py
   - cat index.html
   - echo "With environment variables in Travis-CI"
 
+after_success:
+  - codecov --token=449f263b-7646-4f38-bb86-a79b7fee433c
+  
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
